@@ -56,3 +56,39 @@
 #
 # end
 #----------------------------------------
+
+# print "Ingresa tu año de nacimiento: "
+#
+# a = gets.chomp.to_i
+#
+# if a < 1945
+#   puts "Gran generacion"
+# elsif a>=1945 && a<1965
+#   puts "Baby boomer"
+# elsif a>=1965 && a<1982
+#   puts "X"
+# elsif a>=1982 && a<1995
+#   puts "Millenial"
+# else
+#   puts "Z"
+#
+# end
+#----------------------------------------
+
+a = rand(1..10)
+puts a
+print "Intenta adivinar el numero que estoy pensando: "
+b = gets.chomp.to_i
+i=1
+
+while a != b && i < 3
+  print "No! Intenta nuevamente "
+  b = gets.chomp.to_i
+  i=i+1
+end
+
+if i==3 && b != a
+  puts "Perdiste"
+ else
+  puts "Felicitaciones lo adivinaste"
+end
