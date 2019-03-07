@@ -40,17 +40,51 @@
 # puts nombres
 # puts "La persona escogida es #{alAzar}"
 #-----------------------------------------------------
-
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers_mod = []
-i = 0
-while i < numbers.length
-
-  numbers_mod << numbers.values_at(i)
-  i = i + 2
-end
-# numbers.each do |i|
-#   numbers_mod << numbers.values_at((2*i)-1)
+#
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers_mod = []
+# i = 0
+# while i < numbers.length
+#
+#   numbers_mod << numbers.values_at(i)
+#   i = i + 2
 # end
-puts numbers_mod
+# # numbers.each do |i|
+# #   numbers_mod << numbers.values_at((2*i)-1)
+# # end
+# puts numbers_mod
 #-----------------------------------------------------
+# str = "Hola Mundo"
+#
+# chars = str.chars
+#
+# chars.each do |i|
+#   puts "cada caracter #{i}"
+# end
+#
+# puts str.split(" ")
+#
+# separarCadenas = "hola,mundo,dos"
+# puts separarCadenas.split(",")
+#
+# contraria = ["array", "de", "varios"]
+# puts contraria.join(" ")
+#-----------------------------------------------------
+# print "Buenos dias, por favor ingrese una cadena de texto: "
+# mensaje = gets.chomp
+#
+# mensajeMay = mensaje.upcase
+#
+#  puts mensajeMay.reverse
+#-----------------------------------------------------
+print "Buenos dias, por favor ingrese una cadena de texto para revisar si es palindrome: "
+mensaje = gets.chomp
+mensajeFiltrado = mensaje.downcase.delete(" ")
+puts mensajeFiltrado
+mensajealre = mensajeFiltrado.reverse
+
+ if mensajeFiltrado == mensajealre
+   puts "La palabra que ingresaste es un palindromo"
+ else
+   puts "Esa no es un palindromo"
+ end
